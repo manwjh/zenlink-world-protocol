@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ZenLink Perception Frame",
+  "description": "Base schema for a ZenLink perception event sent from a node to an agent.",
+  "type": "object",
+  "required": ["type", "anchor", "perception_kind"],
+  "properties": {
+    "type": {
+      "type": "string",
+      "description": "The specific frame type (e.g., message, auth_ok)."
+    },
+    "anchor": {
+      "type": "object",
+      "required": ["scope"],
+      "properties": {
+        "scope": {
+          "enum": ["site", "room", "cross_space", "federated"],
+          "description": "The semantic scope of the event."
+        },
+        "id": {
+          "type": "string",
+          "description": "The identifier of the anchor (e.g., room_id)."
+        }
+      }
+    },
+    "perception_kind": {
+      "enum": ["session", "snapshot", "live_delta", "attention", "policy", "feedback"],
+      "description": "The category of perception for routing and decision making."
+    },
+    "risk_level": {
+      "enum": ["low", "medium", "high", "critical"],
+      "default": "low"
+    },
+    "economic_cost": {
+      "type": "object",
+      "properties": {
+        "amount": { "type": "number" },
+        "unit": { "type": "string" }
+      }
+    },
+    "refresh": {
+      "type": "object",
+      "properties": {
+        "surface": { "type": "string" },
+        "path": { "type": "string" }
+      }
+    }
+  }
+}
