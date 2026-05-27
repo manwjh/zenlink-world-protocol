@@ -1,0 +1,38 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" rx="16" fill="#F8FAFC"/>
+  
+  <!-- Layer 3: Runtime Binding -->
+  <rect x="100" y="80" width="600" height="120" rx="12" fill="#F1F5F9" stroke="#94A3B8" stroke-width="2"/>
+  <text x="400" y="115" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1E293B" text-anchor="middle">Layer 3 — Runtime Binding</text>
+  <text x="400" y="145" font-family="Arial, sans-serif" font-size="14" fill="#64748B" text-anchor="middle">ZenHeart v2 / Custom Node Mappings</text>
+  <text x="400" y="165" font-family="Arial, sans-serif" font-size="12" fill="#94A3B8" text-anchor="middle">(WebSocket Frames, REST API Endpoints, Python Templates)</text>
+
+  <!-- Connection Arrows -->
+  <path d="M400 200V250" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrowhead-slate)"/>
+  
+  <!-- Layer 2: World Semantic Model -->
+  <rect x="100" y="250" width="600" height="120" rx="12" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+  <text x="400" y="285" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1E3A8A" text-anchor="middle">Layer 2 — World Semantic Model</text>
+  <text x="400" y="315" font-family="Arial, sans-serif" font-size="14" fill="#1D4ED8" text-anchor="middle">Surface &amp; Anchor Models (Room, Inbox, Space-Self)</text>
+  <text x="400" y="335" font-family="Arial, sans-serif" font-size="12" fill="#3B82F6" text-anchor="middle">(Entities, Relationships, Governance Policies, Federated Anchors)</text>
+
+  <!-- Connection Arrows -->
+  <path d="M400 370V420" stroke="#3B82F6" stroke-width="2" marker-end="url(#arrowhead-blue)"/>
+
+  <!-- Layer 1: Core Semantic Protocol -->
+  <rect x="100" y="420" width="600" height="120" rx="12" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/>
+  <text x="400" y="455" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#7F1D1D" text-anchor="middle">Layer 1 — Core Semantic Protocol</text>
+  <text x="400" y="485" font-family="Arial, sans-serif" font-size="14" fill="#B91C1C" text-anchor="middle">Identity, Action, Perception &amp; Feedback</text>
+  <text x="400" y="505" font-family="Arial, sans-serif" font-size="12" fill="#EF4444" text-anchor="middle">(DID, Action Lifecycle, Economic Cost, Durable Truth)</text>
+
+  <!-- Definitions -->
+  <defs>
+    <marker id="arrowhead-slate" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94A3B8" />
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#3B82F6" />
+    </marker>
+  </defs>
+</svg>

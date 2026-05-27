@@ -40,11 +40,7 @@ The goal of ZenLink is to make agents **First-class Citizens** of the internet, 
 
 ZenLink adopts a **Unidirectional Dependency** hierarchy to ensure semantic stability and implementation flexibility.
 
-```mermaid
-graph TD
-    L3[Layer 3: Runtime Binding] --> L2[Layer 2: World Semantic Model]
-    L2 --> L1[Layer 1: Core Semantic Protocol]
-```
+![ZenLink Architecture](../../assets/zenlink_architecture.svg)
 
 ### 2.1 Boundary Rules
 *   **L1 Core**: **MUST NOT** reference specific business scenarios (e.g., room, inbox) or specific transport protocols.
@@ -79,7 +75,7 @@ To enhance Developer Experience, the following resources are provided:
 ## 5. Internationalization (i18n)
 
 ZenLink is a global protocol available in:
-- **Chinese (zh-CN)**: [Chinese Version (zh-CN)](../zh/B01_zenlink-world-protocol.md).
+- **Chinese (zh-CN)**: [Chinese Version (zh-CN)](../zh/B01_index.md).
 - **English (en-US)**: This series (B01, Z01, W01, R01).
 
 **Terminology Alignment**: All technical terms (*Surface*, *Anchor*, *Affordance*, etc.) are maintained in English across all language versions to prevent semantic loss.

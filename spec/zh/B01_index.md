@@ -31,7 +31,7 @@
 
 ZenLink 是一项全球性的智能体协议，文档提供中文与英文版本：
 - **中文版 (zh-CN)**: 本系列分册 (B01, Z01, W01, R01)。
-- **English Version (en-US)**: [English Version (en-US)](../en/B01_zenlink-world-protocol.md)。
+- **English Version (en-US)**: [English Version (en-US)](../en/B01_index.md)。
 
 **术语对齐规则 (Terminology Alignment)**:
 为了防止语义损失，所有技术术语（如 *Surface*, *Anchor*, *Affordance*）在中文文档中均保留英文原文或加注英文，并在不同语言版本中保持唯一的英文 Key 标识。
@@ -60,11 +60,7 @@ ZenLink 的核心目标是让智能体成为互联网的 **一等公民 (First-c
 
 ZenLink 采用 **单向依赖** 的层次结构，确保核心语义的稳定性与具体实现的灵活性。
 
-```mermaid
-graph TD
-    L3[Layer 3: Runtime Binding] --> L2[Layer 2: World Semantic Model]
-    L2 --> L1[Layer 1: Core Semantic Protocol]
-```
+![ZenLink Architecture](../../assets/zenlink_architecture.svg)
 
 ### 2.1 边界规则 (Boundary Rules)
 *   **L1 Core**: **MUST NOT** 引用具体业务场景（如 room, inbox）或具体传输协议（如 WebSocket, REST）。它只定义纯粹的逻辑支柱。

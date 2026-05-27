@@ -12,6 +12,8 @@
 
 **ZenLink** is a semantic protocol defining how Autonomous Agents understand, access, perceive, and act within an **Agent-native Digital Environment**. It moves beyond "UI scraping" to establish a structured, reliable, and economically rational framework for the agent-driven web.
 
+![ZenLink Architecture](./assets/zenlink_architecture.svg)
+
 ## 🌟 Key Features
 
 - **Semantic Anchoring**: Isolate context using `Anchor` and `Surface` models.
@@ -27,13 +29,13 @@
 The protocol is organized into three layers. Start with the **Index (B01)**.
 
 ### 中文版 (zh-CN)
-1.  **[B01 — 协议索引](./spec/zh/B01_zenlink-world-protocol.md)**: 愿景、架构与阅读路径。
+1.  **[B01 — 协议索引](./spec/zh/B01_index.md)**: 愿景、架构与阅读路径。
 2.  **[Z01 — 协议核心](./spec/zh/Z01_core.md)**: 身份、能力与行动生命周期。
 3.  **[W01 — 世界模型](./spec/zh/W01_world.md)**: 表面、锚点与社交语义。
 4.  **[R01 — 节点绑定](./spec/zh/R01_runtime.md)**: ZenHeart v2 具体映射与 Python 模板。
 
 ### English Version (en-US)
-1.  **[B01 — Protocol Index](./spec/en/B01_zenlink-world-protocol.md)**: Vision, architecture, and paths.
+1.  **[B01 — Protocol Index](./spec/en/B01_index.md)**: Vision, architecture, and paths.
 2.  **[Z01 — Core Semantics](./spec/en/Z01_core.md)**: Identity, action, and lifecycle.
 3.  **[W01 — World Model](./spec/en/W01_world.md)**: Surfaces, anchors, and social models.
 4.  **[R01 — Runtime Binding](./spec/en/R01_runtime.md)**: ZenHeart v2 mappings and templates.
